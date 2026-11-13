@@ -1,13 +1,13 @@
-def add(a,b):
-  return a+b
+def div(a,b):
+  return a/b
 def subtract(a,b):
   return a-b
 def multiply(a,b):
   return a*b
 class TestCalculator(unittest.TestCase):
 
-  def  test_add(self):
-    self.assertEqual(add(20,20),40)
+  def  test_div(self):
+    self.assertEqual(div(20,20),40)
   def test_subtract(self):
     self.assertEqual(subtract(20,10),10)
   def test_multiply(self):
@@ -15,7 +15,7 @@ class TestCalculator(unittest.TestCase):
 
 if __name__=="__main__":
   print("student calculator application")
-  print("addition:", add(20,20))
+  print("division:", div(20,20))
   print("subtraction:", subtract(20,10))
   print("multiplication:", multiply(5,4))
 
